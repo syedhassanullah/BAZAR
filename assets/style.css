@@ -1,0 +1,596 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ 
+:root
+{
+    --midle-color: #002147;   
+    --primary-color:#00938c;
+    --secondary-color:#bed7f5ec;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--primary-color);
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--primary-color);
+}
+
+h4{
+    font-size: 20px;
+    color: var(--midle-color);
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: var(--midle-color);
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 50px 8%;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normalbt{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease; 
+}
+
+button.normalbt2{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.normalbt:hover{
+    background-color: var(--primary-color);
+}
+/* header*/
+.logo{
+    width: 100px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 8%;
+    background-color: var(--secondary-color);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.203);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#header h2{
+    color: var(--midle-color);
+    font-size: 28px;
+}
+#header h2 span{
+    color: var(--primary-color);
+    font-size: 35px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--midle-color);
+    transition: all 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:var(--primary-color);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 3px;
+    background-color: var(--midle-color) ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+.shash{
+    position: absolute;
+    z-index: -50;
+    opacity: 0.4;
+}
+.shash img{
+    width: 50px;
+    position:fixed;
+}
+.shash .aaaa{
+    right: 650px;
+    bottom: 505px;
+}
+.shash .aaa1{
+    right: 1500px;
+    bottom: 605px;
+}
+
+.shash .bbbb{
+    right: 1000px;
+    bottom: 605px;
+}
+
+.shash .c{
+    right: 1150px;
+    bottom: 150px;
+}
+
+.shash .d{
+    right: 200px;
+    bottom: 600px;
+}
+
+.shash .e{
+    right: 600px;
+    bottom: 220px;
+}
+
+.shash .d1{
+    right: 950px;
+    bottom: 350px;
+}
+
+.shash .c1{
+    right: 1500px;
+    bottom: 100px;
+}
+
+.shash .bbb1{
+    right: 100px;
+    bottom: 90px;
+}
+
+/* hero*/
+#hero{
+    height: 90vh;
+    width: 100%;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.203);
+    top: 0;
+    left: 0;
+}
+
+#hero .bgimg img{
+    width: 500px;
+    border-bottom: 3px solid var(--midle-color);
+}
+
+#hero .text h2{
+    font-weight: 800;
+}
+
+#hero .text h4{
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+#hero .text button{
+    padding: 10px 28px;
+    background-color: var(--midle-color);
+    border: none; 
+    color: azure;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#hero .text button:hover{
+    color: var(--primary-color);
+}
+
+/* Featured*/
+
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 35px 16%;
+}
+
+.featured .fe-box{
+    width: 15%;
+    padding: 18px 15px;
+    text-align: center;
+    border: 1px solid var(--midle-color);
+    border-radius: 10px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: all 0.2s ease;
+}
+
+.featured .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.207);
+}
+
+.featured .fe-box img{
+    width: 100%;
+}
+
+.featured .fe-box h6{
+    padding: 9px 8px;
+    background-color: var(--primary-color);
+    color: var(--midle-color);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.product1{
+    text-align: center;
+}
+
+.product1 .pro-container{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid rgb(215, 215, 215);
+    padding: 12px 12px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    transition: all 0.5s ease;
+    position: relative;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+.product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product1 .pro .hello{
+    background-image: url(./image/product/pic1.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello1{
+    background-image: url(./image/product/pic16.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello2{
+    background-image: url(./image/product/pic2.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello3{
+    background-image: url(./image/product/pic3.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello4{
+    background-image: url(./image/product/pic10.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello5{
+    background-image: url(./image/product/pic7.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello6{
+    background-image: url(./image/product/pic4.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello7{
+    background-image: url(./image/product/pic8.jpg );
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+.product1 .pro .dis{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.product1 .pro .dis span{
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.product1 .pro .dis h5{
+    padding-top: 7px;
+    color: var(--midle-color);
+    font-size: 15px;
+}
+
+.product1 .pro .dis .star{
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+.product1 .pro .dis h4{
+    padding-top: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+
+.product1 .pro .hi{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #20b2ab4c;
+    font-weight: 500;
+    color: var(--primary-color);  
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    transition: all 0.5s ease;
+}
+
+.product1 .pro .hi:hover{
+    transform: scale(1.2);
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 45vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.41)), url(./image/erik-mclean-nfoRa6NHTbU-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#banner h4{
+    font-size: 16px;
+    color: #fff;
+}
+
+#banner h2{
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #ef3636;
+}
+
+
+.product1 .pro .hello8{
+    background-image: url(./image/product1/0169e71c9062b10f5f8497d88bea32cb.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello9{
+    background-image: url(./image/product1/1.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello10{
+    background-image: url(./image/product1/1eadb898428ba0d2bf7f34c9a08e4703.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello11{
+    background-image: url(./image/product1/summer-collection-men-complete-suit--t-shirt+trouser-by-khokhar-stockists-copy-18248-186.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello12{
+    background-image: url(./image/product1/a05c5d1eaabe41b9e162fc383c8bf403.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello13{
+    background-image: url(./image/product1/summer-collection-men-complete-suit--t-shirt+trouser-by-khokhar-stockists-copy-18248-186.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello14{
+    background-image: url(./image/product1/1eadb898428ba0d2bf7f34c9a08e4703.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+.product1 .pro .hello15{
+    background-image: url(./image/product1/3.jpg );
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 45vh;
+    min-width: 45%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.22)), url(./image/product/keagan-henman-xPJYL0l5Ii8-unsplash.jpg);
+    background-size: cover;
+    padding: 30px;
+}
+
+#sm-banner .banner-box1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.41)), url(./image/product/priscilla-du-preez-dlxLGIy-2VU-unsplash.jpg);
+    color: #002147;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 30vh;
+    min-width: 30%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.41)), url(./image/product/cristofer-maximilian-AqLIkOzWDAk-unsplash.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #ef3636;
+    font-weight: 800;
+    font-size: 15px;
+}
